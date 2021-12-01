@@ -50,16 +50,7 @@ let mechanic = "Kaylee";
 
 
 
-const crew =  [
- captain = "Mal",
- second = "Zoe",
- pilot = "Wash",
- companion = "Inara",
- mercenary = "Jayne",
- mechanic = "Kaylee",
-
-
-];
+const crew = [captain, second, pilot, companion, mercenary, mechanic];
 console.log(crew);
 
 
@@ -130,19 +121,14 @@ output - a Boolean value - true or false
 * - Return true if the array size is atleast 7, otherwise false.
 */
 
-const team = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet",
-"George Weasley", "Fred Weasley", "Harry Potter"];
-team.forEach(function hasEnoughPlayers(array) {
-    
 
-    
-    if (team.length >= 7) {
-        return true;
-    }
-    else{
-        return false;
-    }
-})
+const team = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
+
+function hasEnoughPlayers(team) {
+    playersOfTeam = team.length >= 7 ? true : false;    
+    return playersOfTeam;
+}
+console.log(hasEnoughPlayers(team)); 
 
 
 /*
